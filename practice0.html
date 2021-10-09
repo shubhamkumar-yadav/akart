@@ -1,0 +1,1087 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+        
+        <style>
+            body{
+                background-color:aliceblue;
+            }
+            .container{
+                grid-gap: 2rem;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                width:1537px;
+                background-color: white;
+                position: fixed;
+                top: 0px;
+                
+            }
+            .left{
+                
+                width:120px;
+                height:85px; 
+                line-height: 0px;
+                background-color: white;
+                display: flex;
+            }
+            .mid{
+                border:2px dark black;
+                margin: 10px;
+                padding: 12px 12px;
+                width:550px;
+                background-color: white;
+            }
+            .right{
+                
+                width: 200px;
+                height:94px;
+                position: absolute;
+                right: 0px;
+                background-color: white;
+                line-height: 0px;
+                display:flex;
+            }
+            .mid input{
+                border:1px solid grey;
+                margin:0px 0px;
+                padding:0px 0px;
+                width:100%;
+                height: 50px;
+                text-align: center;
+                background-color:  aliceblue;
+                border-radius: 15px;
+            }
+            .left img{
+                height:96px;
+                width:120px;
+                filter:invert(100%);
+            }
+            .left h1{
+                
+                font-size: 40px;
+                color:purple;
+                color:orange;
+                font-family: 'Baloo Da 2', cursive;
+                margin-top: 75px;
+                text-shadow: 2px 2px;
+                
+            }
+            #navbar ul li{
+                list-style: none;
+                font-size: 1.3rem;
+                margin: 27px;
+                padding: 1px;
+                margin-top: 20px;
+                padding-bottom: 3px;
+            }
+            #navbar ul{
+                display: flex;
+            }
+            #navbar ul li a{
+                display: block;
+                padding: 3px 22px;
+                border-radius: 20px;
+                text-decoration: none;
+                color: black;
+            }
+            #navbar:before{
+                content: "";
+                background-color: orange;
+                position: absolute;
+                height: 80px;
+                width: 100%;
+                z-index: -1;
+            }
+            #navbar ul li a:hover{
+                color: white;
+                background-color: slategray;
+                cursor: pointer;
+            }
+            .dropdown{
+                position:relative;
+                display: inline-block;
+            }
+            .dropdown-content{
+                display: none;
+                position: relative;
+                background-color: black;
+                width: 90%;
+                font-size: 0.8rem;
+                border-radius: 28px;
+                height: 70%;
+                margin:5px;
+                
+                    
+            }
+            .dropdown:hover .dropdown-content{
+                display:flex;
+                position: fixed;
+                left: 35px;
+                right: 30px;
+                padding-bottom: 10px;
+                line-height: 4px;
+                
+                
+                
+            }
+            .right img{
+                width:46px;
+                height:42px;
+                margin-top: 9px;
+                
+            }
+            .right h1{
+                font-size: 17px;
+                margin-left: 11px;
+            }
+            .right .profile{
+                margin-left: 45px;
+                width:60px;
+                height: 50px;
+            }
+            .right .profile h1{
+                margin-left: 1px;
+            }
+            .latest img{
+                width: 100%;
+                
+            }
+            .latest h2{
+                font-family: 'Baloo Da 2', cursive;
+                margin-top: 0px;
+                font-size: 45px;
+                text-decoration: underline;
+                text-decoration-color: purple;
+                color:purple;
+               
+              
+
+            }
+            .categories{
+                display: flex;
+                background-color: skyblue;
+               
+                
+            }
+            .categories .category{
+                margin:25px;
+            }
+            .categories1{
+                display: flex;
+                background-color: skyblue;
+            }
+            .categories1 .category1{
+                margin:25px;
+            }
+            .categories2{
+                display: flex;
+                background-color: skyblue;
+            }
+            .categories2 .category2{
+                margin:25px;
+            }
+            .categories3{
+                display:flex;
+                background-color: skyblue;
+            }
+            .categories3 .category3{
+                margin:25px;
+            }
+            .categories4{
+                display:flex;
+                background-color: skyblue;
+            }
+            .categories4 .category4{
+                margin:25px;
+            }
+            .categr{
+                font-family: 'Baloo Da 2', cursive;
+                font-size: 45px;
+                text-decoration: underline;
+                text-decoration-color: purple;
+                color:purple;
+            }
+            .categr1{
+                font-family: 'Baloo Da 2', cursive;
+                font-size: 45px;
+                text-decoration: underline;
+                text-decoration-color: purple;
+                color:purple;
+            }
+            .electro{
+                display: flex;
+                
+            }
+            .electro1{
+                display: flex;
+    
+            }
+            .electro2{
+                display: flex;
+               
+        
+            }
+            .electro3{
+                display: flex;
+       
+            }
+            .electro4{
+                display:flex;
+             
+            }
+            .categr2{
+                font-family:'Baloo Da 2', cursive;;
+                font-size: 35px;
+                text-decoration: underline;
+                text-decoration-color: purple;
+                color:purple;
+            }
+            .batro{
+                display: flex;
+            }
+            .batro1{
+                font-family: 'Baloo Da 2', cursive;
+                margin:2px;
+               
+            }
+
+            .categr3{
+                font-family:'Baloo Da 2', cursive;;
+                font-size: 35px;
+                text-decoration: underline;
+                text-decoration-color: purple;
+                color:purple;
+            }
+            .stor1{
+                font-family: 'Baloo Da 2', cursive;
+                margin: 30px;
+                margin-top: 25px;
+                
+            }
+         
+            .stor{
+                display: flex;
+                background-color: skyblue;
+            }
+            .categr4 img{
+                margin-left: 270px;
+                padding:20px;
+                
+            }
+            .categr5 img{
+                margin:auto;
+                width: 100%;
+            }
+            .categr4{
+                background-color: sandybrown;
+            }
+            .footer{
+                width:100%;
+                background:#00121b;
+                display:block;
+            }
+            .inner-footer{
+                width:95%;
+                margin:auto;
+                padding:30px 10px;
+                display:flex;
+                flex-wrap:wrap;
+                box-sizing:border-box;
+                justify-content: center;
+            }
+            .footer-items{
+                width:25%;
+                padding:10px 20px;
+                box-sizing: border-box;
+            }
+            .footer-items h1{
+                padding:10px 0;
+                font-size:25px;
+                color:#fff;
+                text-transform: uppercase;
+            }
+            .footer-items p{
+                color:grey;
+                font-size:16px;
+                text-align: justify;
+                line-height: 25px;
+            }
+            .footer-items h2{
+                margin: 10px 0;
+                color: grey;
+                font-size:16px;
+                font-weight:lighter;
+                text-transform: uppercase;
+            }
+            .border{
+                height:2px;
+                width:40px;
+                background:#ff9800;
+            }
+            .footer-items ul{
+                list-style: none;
+                color:#fff;
+                font-size: 15px;
+                letter-spacing: 0.5px;
+            }
+            .footer-items ul a{
+                text-decoration: none;
+                outline:none;
+                color:#fff;
+                transition:0.3s;
+            }
+            .footer-items ul a:hover{
+                color:#ff9800;
+            }
+            .footer-items ul li{
+                margin:10px 0px;
+                height:25px;
+            }
+            .footer-items ul li i{
+                margin-right: 20px;
+            }
+            .social-media{
+                width:100%;
+                color:#fff;
+                text-align:center;
+            }
+            .social-media a{
+                text-decoration: none;
+            }
+            .social-media i{
+                height:15px;
+                width: 15px;
+                margin: 20px 5px;
+                padding: 10px;
+                color: #fff;
+                border-radius: 50%;
+                border:1px solid grey;
+            }
+            .social-media i:hover{
+                background: grey;
+            }
+            .footer-bottom{
+                padding:10px;
+                background:#3d545f;
+                color:#fff;
+                font-size: 12px;
+            }
+            #navbar{
+                position: fixed;
+                top: 90px;
+                width:1610px;
+                height: 180px;
+            }
+            
+      
+            
+        
+        
+            
+                
+        
+            
+            
+          
+           
+            
+            
+            
+            
+        </style>
+    
+    
+    
+    
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <header>
+            <nav class="container">
+                <div class="left">
+                    <div><img src="https://cdn3.vectorstock.com/i/1000x1000/97/47/s-letter-volume-blue-and-purple-color-logo-design-vector-9459747.jpg"> </div>
+                    
+                    <div><h1 style="text-align: center";>Kart</h1></div>
+                
+                </div>
+                <div class="mid">
+                    <input type="text" name="search box" placeholder="Search for products,brands and more" id="search">
+                    
+                </div>
+                <div class="right">
+                    <div class="bag"><a href=""><img src="https://image.freepik.com/free-icon/shopping-bag_318-10005.jpg"></a>
+                    <h1>Bag</h1></div>
+                    <div class="profile"><a href="" target="";><img src="https://www.tuktukdesign.com/wp-content/uploads/2020/01/profile-icon-vector.jpg"></a>
+                    <h1 class="profile">Profile</h1></div>
+                    
+                </div>
+                
+            
+            
+            
+            </nav>
+        
+        
+        
+        </header>
+        <script src="prit.js">
+        </script>
+        <nav id="navbar">
+            <div id="services">
+                
+                <ul>
+                    <li class="item"><a href="#">
+        <div class="dropdown">
+            <span>Men</span>
+            <div class="dropdown-content">
+                <div><p style="color:red";>Topwear</p>
+                <a href="" target="";><p style="color:white";>T-shirt</p></a>
+                <a href="" target="";><p style="color:white";>Formal Shirts</p></a>
+                <a href="" target="";><p style="color:white";>Casual Shirts</p></a>
+                <a href="" target="";><p style="color:white";>Sweat Shirts</p></a>
+                <a href="" target="";><p style="color:white";>Sweaters</p></a>
+                <a href="" target="";><p style="color:white";>Jackets</p></a>
+                <a href="" target="";><p style="color:white";>Blazer and Coats</p></a>
+                <a href="" target="";><p style="color:white";>Suits</p></a>
+                <a href="" target="";><p style="color:white";>Rain Jackets</p></a></div>
+                <div><p style="color:red";>Indian and Festive wear</p>
+                <a href="" target="";><p style="color:white";>Kurtas and Kurta Sets</p></a>
+                <a href="" target="";><p style="color:white";>Sherwanis</p></a>
+                <a href="" target="";><p style="color:white";>Nehru Jackets</p></a>
+                <a href="" target="";><p style="color:white";>dhotis</p></a></div>
+                <div><p style="color:red";>Bottom Wear</p>
+                <a href="" target="";><p style="color:white";>Jeans</p></a>
+                <a href="" target="";><p style="color:white";>Casual Trousers</p></a>
+                <a href="" target="";><p style="color:white";>Formal Trousers</p></a>
+                <a href="" target="";><p style="color:white";>Shorts</p></a>
+                <a href="" target="";><p style="color:white";>Trackpants and Joggers</p></a></div>
+                <div><p style="color:red";>Innerwear and Sleepwear</p>
+                <a href="" target="";>><p style="color:white";>Brief and Trunks</p></a>
+                <a href="" target="";><p style="color:white";>Boxers</p></a>
+                <a href="" target="";><p style="color:white";>Vests</p></a>
+                <a href="" target="";><p style="color:white";>Loungewear and Sleepwear</p></a>
+                <a href="" target="";><p style="color:white";>Thermals</p></a>
+                <a href="" target="";><p style="color:red";>Plus Size</p></a></div>
+                <div><p style="color:red";>Footwear</p>
+                <a href="" target="";><p style="color:white";>Casual Shoes</p></a>
+                <a href="" target="";><p style="color:white";>Sports Shoes</p></a>
+                <a href="" target="";><p style="color:white";>Formal Shoes</p></a>
+                <a href="" target="";><p style="color:white";>Sneakers</p></a>
+                <a href="" target="";><p style="color:white";>Sandals and Floaters</p></a>
+                <a href="" target="";><p style="color:white";>Flip flops</p></a>
+                <a href="" target="";><p style="color:white";>Socks</p></a>
+                <a href="" target="";><p style="color:red";>Sunglasses and Frames</p></a>
+                <a href="" target="";><p style="color:red";>Watches</p></a></div>
+                <div><p style="color:red";>Sports and ActiveWear</p>
+                <a href="" target="";><p style="color:white";>Sports Shoes</p></a>
+                <a href="" target="";><p style="color:white";>Active T-shirts</p></a>
+                <a href="" target="";><p style="color:white";>Trackpants and Shorts</p></a>
+                <a href="" target="";><p style="color:white";>Tracksuits</p></a>
+                <a href="" target="";><p style="color:white";>Jackets and Sweatshirts</p></a>
+                <a href="" target="";><p style="color:white";>Sports Accessories</p></a>
+                <a href="" target="";><p style="color:white";>Swimwear</p></a></div>
+                <div><p style="color:red";>Fashion Accessories</p>
+                <a href="" target="";><p style="color:white";>Wallets</p></a>
+                <a href="" target="";><p style="color:white";>Belts</p></a>
+                <a href="" target="";><p style="color:white";>Ties,Cufflinks and Pocket accessories</p></a>
+                <a href="" target="";><p style="color:white";>Caps and Hats</p></a>
+                <a href="" target="";><p style="color:white";>Mufflers,Scarves and Gloves</p></a>
+                <a href="" target="";><p style="color:white";>Rings and Wristwear</p></a>
+                <a href="" target="";><p style="color:white";>Helmets</p></a></div>
+                
+               
+                
+              
+              
+                
+                
+                
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        </div></a></li>
+                    <li class="item"><a href="#">
+        <div class="dropdown">
+            <span>Women</span>
+            <div class="dropdown-content">
+                <div><p style="color:hotpink";>Indian and Fusion wear</p>
+                <a href=""; target="";><p style="color:white";>Kurtas and Suits</p></a>
+                <a href=""; target="";><p style="color:white";>Kurtis,Tunic and Tops</p></a>
+                <a href="" target="";><p style="color:white";>Ethnic dresses</p></a>
+                <a href="" target=""><p style="color:white";>Legging,Salwars and Churidars</p></a>
+                <a href="" target="";><p style="color:white";>Skirt and Palazzos</p></a>
+                <a href="" target="";><p style="color:white";>Sarees and Blouses</p></a>
+                <a href="" target="";><p style="color:white";>Dress Materials</p></a>
+                <a href="" target="";><p style="color:white";>Lehenga cholis</p></a>
+                <a href="" target="";><p style="color:white";>Dupattas and Shawls</p></a>
+                <a href="" target="";><p style="color:white";>Jackets and Waistcoats</p></a>
+                <a href="" target="";><p style="color:hotpink";>Belts,Scarves and more</p></a>
+                <a href="" target="";><p style="color:hotpink";>Watches and Wearables</p></a></div>
+                <div><p style="color:hotpink";>Western Wear</p>
+                <a href="" target="";><p style="color:white";>Dresses and jumpsuits</p></a>
+                <a href="" target="";><p style="color:white";>Tops,T-shirts and Shirts</p></a>
+                <a href="" target="";><p style="color:white";>Shorts and Skirts</p></a>
+                <a href="" target="";><p style="color:white";>Jeans and Jeggings</p></a>
+                <a href="" target="";><p style="color:white";>Trousers and Capris</p></a></div>
+                <div><a href="" target="";><p style="color:white";>Shrugs</p></a>
+                <a href="" target="";><p style="color:white";>Sweaters and Sweatshirts</p></a>
+                <a href="" target="";><p style="color:white";>Jackets and Coats</p></a>
+                <a href="" target="";><p style="color:white";>Blazers and Waistcoats</p></a>
+                <a href="" target="";><p style="color:hotpink";>Plus size</p></a>
+                <a href="" target="";><p style="color:hotpink";>Sunglasses and Frames</p></a></div>
+                <div><p style="color:hotpink";>Footwear</p>
+                <a href="" target="";><p style="color:white";>Flats</p></a>
+                <a href="" target="";><p style="color:white";>Casual shoes</p></a>
+                <a href="" target="";><p style="color:white";>Heels</p></a>
+                <a href="" target="";><p style="color:white";>Boots</p></a>
+                <a href="" target="";><p style="color:white";>Sports Shoes and Floaters</p></a></div>
+                <div><p style="color:hotpink";>Sports and Active clothing</p>
+                <a href="" target="";><p style="color:white";>footwear</p></a>
+                <a href="" target="";><p style="color:white";>Sports Accessories</p></a>
+                <a href="" target="";><p style="color:white";>Sports Equipments</p></a></div>
+                <div><p style="color:hotpink";>Lingerie and Sleepwear</p>
+                <a href="" target="";><p style="color:white";>Bras and Lingerie Sets</p></a>
+                <a href="" target="";><p style="color:white";>Briefs</p></a>
+                <a href="" target="";><p style="color:white";>Shapewear</p></a>
+                <a href="" target="";><p style="color:white";>Sleepwear and Loungewear</p></a>
+                <a href="" target="";><p style="color:white";>Swimwear</p></a>
+                <a href="" target="";><p style="color:white";>Camisoles and Thermals</p></a></div>
+                <div><p style="color:hotpink";>Jewellery</p>
+                <a href="" target="";><p style="color:white";>Fashion Jewellery</p></a>
+                <a href="" target="";><p style="color:white";>Fine Jewellery</p></a>
+                <a href="" target="";><p style="color:white";>Earrings</p></a>
+                <a href="" target="";><p style="color:hotpink";>Backpacks</p></a>
+                <a href="" target="";><p style="color:hotpink";>Handbags,Bags and Wallets</p></a>
+                <a href="" target="";><p style="color:hotpink";>Luggages and Trolleys</p></a></div>
+                
+                
+              
+                
+                
+                
+                
+                
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        </div></a></li>
+                    <li class="item"><a href="#">
+        <div class="dropdown">
+            <span>Kids</span>
+            <div class="dropdown-content">
+                <div><p style="color:coral";>Boys Clothing</p>
+                <a href="" target="";><p style="color:white";>T-shirt</p></a>
+                <a href="" target="";><p style="color:white";>Shirts</p></a>
+                <a href="" target="";><p style="color:white";>Shorts</p></a>
+                <a href="" target="";><p style="color:white";>Jeans</p></a>
+                <a href="" target="";><p style="color:white";>Trousers</p></a>
+                <a href="" target="";><p style="color:white";>Clothing Sets</p></a>
+                <a href="" target="";><p style="color:white";>Ethnic Wear</p></a>
+                <a href="" target="";><p style="color:white";>Trackpants and Pyjamas</p></a>
+                <a href="" target="";><p style="color:white";>Jackets,Sweaters and Sweatshirts</p></a>
+                <a href="" target="";><p style="color:white";>Innerwear and Sleepwear</p></a></div>
+                <div><p style="color:coral";>Girls Clothing</p>
+                <a href=""><p style="color:white";>Dresses</p></a>
+                <a href="" target="";><p style="color:white";>Tops</p></a>
+                <a href="" target="";><p style="color:white";>T-shirts</p></a>
+                <a href="" target="";><p style="color:white";>Clothing Sets</p></a>
+                <a href="" target="";><p style="color:white";>Ethnic wear</p></a>
+                <a href="" target="";><p style="color:white";>Dungarees and Jumpsuits</p></a>
+                <a href="" target="";><p style="color:white";>Skirts and Shorts</p></a>
+                <a href="" target="";><p style="color:white";>Tights and Leggings</p></a>
+                <a href="" target="";><p style="color:white";>Jeans,Trousers and Capris</p></a>
+                <a href="" target="";><p style="color:white";>Innerwear and Sleepwear</p></a></div>
+                <div><p style="color:coral";>Boys Footwear</p>
+                <a href="" target="";><p style="color:white";>Casual Shoes</p></a>
+                <a href="" target="";><p style="color:white";>Sports Shoes</p></a>
+                <a href="" target="";><p style="color:white";>Sandals</p></a>
+                <a href="" target="";><p style="color:white";>Flip flops</p></a>
+                <a href="" target="";><p style="color:white";>School Shoes</p></a></div>
+                <div><p style="color:coral";>Girls Footwear</p>
+                <a href="" target="";><p style="color:white";>Flats</p></a>
+                <a href="" target="";><p style="color:white";>Casual Shoes</p></a>
+                <a href="" target="";><p style="color:white";>Heels</p></a>
+                <a href="" target="";><p style="color:white";>Flip flops</p></a>
+                <a href="" target="";><p style="color:white";>Sandals</p></a>
+                <a href="" target="";><p style="color:white";>School Shoes</p></a></div>
+                <div><p style="color:coral";>Infants</p>
+                <a href="" target="";><p style="color:white";>Rompers and Onesies</p></a>
+                <a href="" target="";><p style="color:white";>Clothing Sets</p></a>
+                <a href="" target="";><p style="color:white";>T-shirts and Tops</p></a>
+                <a href="" target="";><p style="color:white";>Dresses</p></a>
+                <a href="" target="";><p style="color:white";>Bottom wear</p></a>
+                <a href="" target="";><p style="color:white";>Winter wear</p></a>
+                <a href="" target="";><p style="color:white";>Innerwear and Sleeepwear</p></a>
+                <a href="" target="";><p style="color:white";>Infants Accessories</p></a></div>
+                <div><p style="color:coral";>Kids Accessories</p>
+                <a href="" target="";><p style="color:white";>Bags and Backpacks</p></a>
+                <a href="" target="";><p style="color:white";>Eye wear</p></a>
+                <a href="" target="";><p style="color:coral";>Home and Baths</p></a></div>
+                
+                
+                
+                
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        </div></a></li>
+                    <li class="item"><a href="#">
+        <div class="dropdown">
+            <span>Medical Store</span>
+            <div class="dropdown-content">
+                <a href="" target="";><p style="color:chocolate";>Medicines</p></a>
+                <a href="" target="";><p style="color:chocolate";>Masks</p></a>
+                <a href="" target="";><p style="color:chocolate";>Sanitizers</p></a>
+                <a href="" target="";><p style="color:chocolate";>Medical Kits and Equipments</p></a>
+               
+               
+                
+             
+                
+                
+                
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        </div></a></li>
+                    <li class="item"><a href="#">
+        <div class="dropdown">
+            <span>Beauty and Health Care</span>
+            <div class="dropdown-content">
+                <div><p style="color:palegreen";>Girls</p>
+                <a href="" target="";><p style="color:white";>Makeup</p></a>
+                <a href="" target="";><p style="color:white";>Skincare</p></a>
+                <a href="" target="";><p style="color:white";>Premium Beauty</p></a>
+                <a href="" target="";><p style="color:white";>Lipstics</p></a>
+                <a href="" target="";><p style="color:white";>Fragrances</p></a>
+                <a href="" target="";><p style="color:white";>Bath and Body</p></a>
+                <a href="" target="";><p style="color: white";>Hair Care</p></a>
+                <a href="" target="";><p style="color: white";>Hair Styling</p></a></div>
+                <div><p style="color:palegreen";>Boys</p>
+                <a href="" target="";><p style="color:white";>Hair Care</p></a>
+                <a href="" target="";><p style="color:white";>Perfumes and Body Mists</p></a>
+                <a href="" target="";><p style="color:white";>Deodrants</p></a>
+                <a href="" target="";><p style="color:white";>Hair Styling</p></a>
+                <a href="" target="";><p style="color:white";>Men's Grooming</p></a>
+                <a href="" target="";><p style="color:white";>Bath and Body</p></a>
+                <a href="" target="";><p style="color:white";>Skin Care</p></a>
+                <a href="" target=""><p style="color:palegreen";>Baby Care</p></a></div>
+              
+              
+                
+                
+                
+                
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        </div></a></li>
+                    <li class="item"><a href="#">
+                        <div class="dropdown">
+                        <span>Electronics</span>
+                        <div class="dropdown-content">
+                            <div><p style="color:darkorange";>Mobiles</p>
+                             <a href="" target="";><p style="color:white";>Mi</p></a>
+                             <a href="" target="";><p style="color: white";>OnePlus</p></a>
+                             <a href="" target="";><p style="color:white";>Samsung</p></a>
+                             <a href="" target="";><p style="color:white";>Huawei</p></a>
+                             <a href="" target="";><p style="color:white";>Apple</p></a>
+                             <a href="" target="";><p style="color:white";>Motorola</p></a>
+                             <a href="" target="";><p style="color:white";>Nokia</p></a>
+                             <a href="" target="";><p style="color:white";>Vivo</p></a>
+                             <a href="" target="";><p style="color:white";>10.or</p></a>
+                             <a href="" target="";><p style="color:white";>CoolPad</p></a>
+                             <a href="" target="";><p style="color:white";>Honor</p></a>
+                             <a href="" target="";><p style="color:white";>Lenovo</p></a>
+                             <a href="" target="";><p style="color:white";>LG</p></a>
+                             <a href="" target="";><p style="color:white";>Micromax</p></a></div>
+                             <div><p style="color:darkorange";>Mobile Accessories</p>
+                             <a href="" target="";><p style="color:white";>Cases and Covers</p></a>
+                             <a href="" target="";><p style="color:white";>Screen Guards</p></a>
+                             <a href="" target="";><p style="color:white";>Power Banks</p></a>
+                             <a href="" target="";><p style="color:white";>Headsets</p></a>
+                             <a href="" target="";><p style="color:white";>Data Cables</p></a>
+                             <a href="" target="";><p style="color:white";>Chargers</p></a>
+                             <a href="" target="";></a><p style="color:white";>Selfie Sticks</p>
+                             <a href="" target="";><p style="color:white";>Skin Stickers</p></a>
+                             <a href="" target="";><p style="color:white";>Internal Batteries</p></a>
+                             <a href="" target="";><p style="color:white";>Mounts and Stands</p></a>
+                             <a href="" target="";><p style="color:white";>Lens Kits</p></a>
+                             <a href="" target="";><p style="color:white";>Replacements Parts</p></a></div>
+                             <div><p style="color:darkorange";>Headphones</p>
+                             <a href="" target="";><p style="color:white";>Earphones</p></a>
+                             <a href="" target="";><p style="color:white";>On and Over ear Headphones</p></a>
+                             <a href="" target="";><p style="color:white";>wireless Headphones</p></a>
+                             <a href="" target="";><p style="color:white";>Headphones with mic</p></a>
+                             <a href="" target="";><p style="color:white";>Sports Headphones</p></a>
+                             <a href="" target="";><p style="color:white";>Noise cancelling Headphones</p></a></div>
+                             <div><p style="color:darkorange";>Speakers</p>
+                             <a href="" target="";><p style="color:white";>Bluetooth Speakers</p></a>
+                             <a href="" target="";><p style="color:white";>Multimedia Speakers</p></a>
+                             <a href="" target="";><p style="color:white";>Home theater systems</p></a>
+                             <a href="" target="";><p style="color:white";>Soundbars</p></a></div>
+                             <div><p style="color:darkorange";>MP3 and other Media players</p>
+                             <a href="" target="";><p style="color:white";>Skin Stickers</p></a>
+                             <a href="" target="";><p style="color:white";>Internal Batteries</p></a>
+                             <a href="" target="";><p style="color:white";>Mounts and Stands</p></a>
+                             <a href="" target="";><p style="color:white";>Lens Kits</p></a>
+                             <a href="" target="";><p style="color:white";>Replacements Parts</p></a></div>
+                             <div><p style="color:darkorange";>Networking</p>
+                             <a href="" target="";><p style="color:white";>Routers</p></a>
+                             <a href="" target="";><p style="color:white";>Modems</p></a>
+                             <a href="" target="";><p style="color:white";>Data Cards and Dongles </p></a>
+                             <a href="" target="";><p style="color:white";>Wireless USB</p></a></div>
+                             <div><p style="color:darkorange";>Components</p>
+                             <a href="" target="";><p style="color:white";>Processors</p></a>
+                             <a href="" target="";><p style="color:white";>Motherboard</p></a>
+                             <a href="" target="";><p style="color:white";>Internal HDD</p></a>
+                             <a href="" target="";><p style="color:white";>Graphic Cards</p></a>
+                             <a href="" target="";><p style="color:darkorange";>Watches</p></a>
+                             <a href="" target="";><p style="color:darkorange";>Trimmers</p></a>
+                             <a href="" target="";><p style="color:darkorange";>Other Appliances</p></a></div>
+                        </div>     
+                            
+                           
+                            
+                           
+                             
+                            
+                             
+                
+                
+                
+                
+            
+            
+            
+            </div></a></li>
+                    <li class="item"><a href="#">
+        <div class="dropdown">
+            <span>Home and Living</span>
+            <div class="dropdown-content">
+                <div><p style="color:deepskyblue";>Bed Linen and Furnishing</p>
+                <a href="" target="";><p style="color:white";>Bedsheets</p></a>
+                <a href="" target="";><p style="color:white";>Bedding sets</p></a>
+                <a href="" target="";><p style="color:white";>Blankets,Quilts and Dohars</p></a>
+                <a href="" target="";><p style="color:white";>Pillows and Pillow covers</p></a>
+                <a href="" target="";><p style="color:white";>Bed Covers</p></a>
+                <p style="color:deepskyblue";>Flooring</p>
+                <a href="" target="";><p style="color:white";>Carpets</p></a>
+                <a href="" target="";><p style="color:white";>Floor Mats and Dhurries</p></a>
+                <a href="" target="";><p style="color:white";>Door Mats</p></a></div>
+                <div><p style="color:deepskyblue";>Bath</p>
+                <a href="" target="";><p style="color:white";>Bath Towels</p></a>
+                <a href="" target="";><p style="color:white";>Hand and Face Towels</p></a>
+                <a href="" target="";><p style="color:white";>Beach Towels</p></a>
+                <a href="" target="";><p style="color:white";>Towels set</p></a>
+                <a href="" target="";><p style="color:white";>Bath Rugs</p></a>
+                <a href="" target="";><p style="color:white";>Bath Robes</p></a>
+                <a href="" target="";><p style="color:white";>Bathroom Accessories</p></a></div>
+                <div><p style="color:deepskyblue";>Lamps and Lighting</p>
+                <a href="" target="";><p style="color:white";>Floor Lamps</p></a>
+                <a href="" target="";><p style="color:white";>Wall Lamps</p></a>
+                <p style="color:deepskyblue";>Home Decor</p>
+                <a href="" target="";><p style="color:white";>Candels</p></a>
+                <a href="" target="";><p style="color:white";>Clocks</p></a>
+                <a href="" target="";><p style="color:white";>Mirror</p></a>
+                <a href="" target="";><p style="color:white";>Showpieces and Vases</p></a>
+                <a href="" target="";><p style="color:deepskyblue";>Curtains</p></a>
+                <a href="" target="";><p style="color:deepskyblue";>Cushions and Cushion Covers</p></a></div>
+                <div><p style="color:deepskyblue";>Storage</p>
+                <a href="" target="";><p style="color:white";>Organisers</p></a>
+                <a href="" target="";><p style="color:white";>Hooks and Holders</p></a>
+                <p style="color:deepskyblue";>Kitchen and Table</p>
+                <a href="" target="";><p style="color:white";>Tableware and Serveware</p></a>
+                <a href="" target="";><p style="color:white";>Bar and Drinkware</p></a>
+                <a href="" target="";><p style="color:white";>Cookware and Kitchen Tools</p></a>
+                <a href="" target="";><p style="color:white";>Kitchen Storage</p></a>
+                <a href="" target="";><p style="color:white";>Tables covers and Furnishing</p></a></div>
+                
+                
+                
+             
+                
+              
+            
+                
+                
+                
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        </div></a></li>
+                </ul>
+            
+            </div>
+        
+        
+        
+        </nav>
+        <div class="latest">
+            <h2 style="text-align: center";>Latest Deals</h2>
+            <a href=""><img src="https://www.amazon.in/images/G/31/img19/CEPC/storage/2020/May/IN_CEPC_BundlesStore_1500x350.jpg"></a>
+        </div>
+        <div class="categr5"><a href=""><img src="https://www.amazon.in/images/G/31/img20/Smallappliances/Herotator/Cooking-days_1500x600._CB428794036_.jpg"></a></div>
+        <div class="categr"><h2 style="text-align: center";>CATEGORIES To Shop</h2></div>
+        <div class="categories">
+            
+            <div class="category">
+                <a href="" target="";><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/8d992d81-49e6-4dec-89a4-49a8af8beb5d1594222967220-Kurtas-_-Kurta-Sets.jpg"></a>
+            </div>
+            <div class="category">
+                <a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/89f1bd9d-3a28-456d-888a-beff717a06f81594222908155-Shirts.jpg"></a>
+            </div>
+            <div class="category">
+                <a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/870d0dc1-c128-4e2a-b70a-2e29c1187bcb1594222834017-Dresses.jpg"></a>
+            </div>
+            <div class="category">
+                <a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/3231cc8e-7dba-4c91-a9d7-33d1b816d3ee1594223046443-Home.jpg"></a>
+            </div>
+        </div>
+        <div class="categories1">
+            <div class="category1"><a href="" target="";><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a048cca8-7b5d-417e-9645-ca98f4b6e52c1594222967506-Sarees.jpg"></a></div>
+            <div class="category1"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/9ff1f34e-9242-47fd-9566-e7d7a5c240511594222908483-T-shirt.jpg"></a></div>
+            <div class="category1"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/18eb31db-8dcb-4efa-b92d-61c8ebe0ee811594222834368-Shorts.jpg"></a></div>
+            <div class="category1"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/faed5f8c-a52e-44a1-aea1-55ab4a69c7191594223046667-Watches.jpg"></a></div>
+        </div>
+        <div class="categories2">
+            <div class="category2"><a href="" target="";><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/b0f459a0-9ef0-4392-a9ed-23892a36e79c1594222966859-Dresses.jpg"></a></div>
+            <div class="category2"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/720cf6ef-3be4-4825-8211-0125c942e3821594222907960-Jeans.jpg"></a></div>
+            <div class="category2"><a href="" target="";><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/fc206d75-b4f1-46a8-bcfd-841d779aeb6e1594222834439-Tshirts-_-Tops.jpg"></a></div>
+            <div class="category2"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/df4285a5-737e-4a8d-82b5-429848a0dd261594223046391-Headphones.jpg"></a></div>
+        </div>
+        <div class="categories3">
+            <div class="category3"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a4dedaa4-3710-4061-b7d6-ca8c83ce9d021594222967117-Heels.jpg"></a></div>
+            <div class="category3"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/2bac5e2d-337b-42c0-88c7-3d4e2dc464141594222908262-Shorts-_-Trousers.jpg"></a></div>
+            <div class="category3"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/f0f9b81a-b9d5-4b8b-94d5-ea878fa9b18e1594222834121-Infant-Essential.jpg"></a></div>
+            <div class="category3"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/bd1f2451-ff72-4dba-81a5-fe8424b3fd821594223046531-Masks.jpg"></a></div>
+        </div>
+         <div class="categories4">
+            <div class="category4"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a352f908-57c8-4c66-b052-18137cf15e6c1594222967074-Handbags.jpg"></a></div>
+            <div class="category4"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/ae14f627-9fd9-41ce-80a4-f107c316c7eb1594222907625-Casual-shoes.jpg"></a></div>
+            <div class="category4"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/2a9eb4bb-f3da-4f7f-9fde-7fff8c8f89041594222834070-Footwear.jpg"></a></div>
+            <div class="category4"><a href=""><img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a38a8d79-3766-47df-b207-b6dc9cfd7ff81594223046614-Plus-Size-Womens.jpg"></a></div>
+        </div>
+        <div class="categr1"><h2 style="text-align: center";>Electronics To Shop</h2></div>
+        <div class="electro">
+            <div class="electro">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/mobile-12221.jpg"></a>
+            </div>
+            <div class="electro">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/headphones-122213.jpg"></a>
+            </div>
+        </div>
+        <div class="electro1">
+            <div class="electro1">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/speakers.jpg"></a>
+            </div>
+            <div class="electro1">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/memory_card.jpg"></a>
+            </div>
+        </div>
+        <div class="electro2">
+            <div class="electro2">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/routers.jpg"></a>
+            </div>
+            <div class="electro2">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/mobile_accessories.jpg"></a>
+            </div>
+        </div>
+        <div class="electro3">
+            <div class="electro3">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/tablets._CB497531413_.jpg"></a>
+            </div>
+            <div class="electro3">
+                <a href=""><img src="https://www.amazon.in/images/G/31/Img18/DATA_STORAGE_new_tiles/pc_accessories.jpg"></a>
+            </div>
+        </div>
+        <div class="electro4">
+            <div class="electro4">
+                <a href=""><img src="https://www.amazon.in/images/G/31/img18/Wearables/Electronics/Smartwatches_electronics_Shop-by-Category-Tiles_750x783._CB446441858_.jpg"></a>
+            </div>
+            <div class="electro4">
+                <a href=""><img src="https://www.amazon.in/images/G/31/img18/Wearables/Electronics/Smart-home-deviceselectronics_Shop_by_Category_Tiles_750x783._CB446460518_.jpg"></a>
+            </div>
+        </div>
+        <div class="categr2"><h2>Latest Phones</h2></div>
+        <div class="batro">
+            <div class="batro1">
+                <a href=""><img src="https://www.amazon.in/images/I/41NseV-HWAL._AC_US240_FMwebp_QL65_.jpg"></a>
+                <a href=""><p style="color:deepskyblue";>OPPO A5 2020 (Dazzling White, 3GB RAM, 64GB Storage) with Additional Exchange Offers</p></a>
+                <a href=""><p style="color:red";>Rs 10,990.00 <del>Rs 14990.00</del></p></a>
+            </div>
+            <div class="batro1">
+                <a href=""><img src="https://www.amazon.in/images/I/4123kSIKJ6L._AC_US240_FMwebp_QL65_.jpg"></a>
+                <a href=""><p style="color:deepskyblue";>Redmi Note 8 Pro (Halo White, 6GB RAM, 128GB Storage with Helio G90T Processor)</p></a>
+                <a href=""><p style="color:red";>Rs 16,999.00  <del>Rs 17999.00</del></p></a>
+            </div>
+            <div class="batro1">
+                <a href=""><img src="https://www.amazon.in/images/I/41mGLH7EUNL._AC_US240_FMwebp_QL65_.jpg"></a>
+                <a href=""><p style="color:deepskyblue";>Redmi Note 8 (Neptune Blue, 4GB RAM, 64GB Storage)</p></a>
+                <a href=""><p style="color:red";>Not Available</p></a>
+            </div>
+                <div class="batro1">
+                <a href=""><img src="https://www.amazon.in/images/I/51pJmzrhEqL._AC_US240_FMwebp_QL65_.jpg"></a>
+                <a href=""><p style="color:deepskyblue";>Redmi Note 9 Pro (Interstellar Black, 4GB RAM, 64GB Storage) - Latest Snapdragon 720G & Gorilla Glass 5 Protection</p></a>
+                <a href=""><p style="color:red";>Rs 13,999.00</p></a>
+            </div>
+            <div class="batro1">
+                <a href=""><img src="https://www.amazon.in/images/I/41xg1z2h-uL._AC_US240_FMwebp_QL65_.jpg"></a>
+                <a href=""><p style="color:deepskyblue";>Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)</p></a>
+                <a href=""><p style="color:red";>Rs 13,999.00 <del>Rs 14,449.00</del></p></a>
+            </div>
+        </div>
+        <div class="categr3"><h2>Safety</h2></div>
+        <div class="stor">
+            <div class="stor1">
+                <a href="" target="";><img src="https://www.amazon.in/images/G/31/img20/AmazonLaunchpad/Store/Trends/masks-1.jpg"></a>
+            </div>
+            <div class="stor1">
+                <a href="" target="";><img src="https://www.amazon.in/images/G/31/img20/AmazonLaunchpad/Store/Trends/ppe_kits.jpg"></a>
+            </div>
+            <div class="stor1">
+                <a href="" target="";><img src="https://www.amazon.in/images/G/31/img20/AmazonLaunchpad/Store/Trends/sanitizers.jpg"></a>
+            </div>
+           
+       
+        
+        
+        
+        
+        </div>
+        
+        <div class="categr4"><a href=""><img src="https://www.amazon.in/images/G/31/AMS/IN/970X250-_desktop_banner.jpg"></a></div>
+     <div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <h1>About Us </h1>
+                <p>this is our company which provides you the best deal within 24 hours</p>
+                
+            </div>
+            <div class="footer-items">
+                <h2>Quick Links</h2>
+                <div class="border"></div>
+                <ul>
+                    <a href=""><li>Men</li></a>
+                    <a href=""><li>Women</li></a>
+                    <a href=""><li>Kids</li></a>
+                    <a href=""><li>Medical Store</li></a>
+                    <a href=""><li>Beauty and Health Care</li></a>
+                    <a href=""><li>Electronics</li></a>
+                    <a href=""><li>Home and Living</li></a>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>           1,XYZ Street,Bihar</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>        +91 6201020078</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>      saurv6201020078s@gmail.com</li>
+                   
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+          
+        </div>
+        <div class="footer-bottom">
+                Copyright &copy;24 hours delivery2019.All rights reserved.
+        </div>
+    </div>
+
+      
+        
+        
+    
+    
+    
+    
+    </body>
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
